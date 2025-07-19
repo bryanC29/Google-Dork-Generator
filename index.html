@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Google Dork Helper Tool</h1>
+
+    <h2>Input Fields</h2>
+    <form action="POST" id="form">
+        <label for="exactText">Exact Text</label>
+        <input type="text" name="exactText" id="exactText" placeholder="Exact Text">
+        <br>
+        <label for="negativeWord">Negative Word</label>
+        <input type="text" name="negativeWord" id="negativeWord" placeholder="Negative Words">
+        <br>
+        <label for="exactWord">Exact Word</label>
+        <input type="text" name="exactWord" id="exactWord" placeholder="Exact Words">
+        <br>
+        <label for="inUrl">In URL Text</label>
+        <input type="text" name="inUrl" id="inUrl" placeholder="In URL Text">
+        <br>
+        <label for="inTitle">In Title Text</label>
+        <input type="text" name="inTitle" id="inTitle" placeholder="In Title Text">
+        <br>
+        <label for="website">Website</label>
+        <input type="text" name="website" id="website" placeholder="Website">
+        <br>
+        <label for="fileType">File Type</label>
+        <input type="text" name="fileType" id="fileType" placeholder="File Type">
+        <br>
+        <label for="dateBefore">Date Before</label>
+        <input type="text" name="dateBefore" id="dateBefore" placeholder="YYYY-MM-DD">
+        <br>
+        <label for="dateAfter">Date After</label>
+        <input type="text" name="dateAfter" id="dateAfter" placeholder="YYYY-MM-DD">
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Result</h2>
+    <div id="result"></div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
