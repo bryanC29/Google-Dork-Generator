@@ -30,6 +30,9 @@ document.getElementById("form").addEventListener("submit", (e) => {
   const dateAfter = document.getElementById("dateAfter").value;
   const dateAfterVal = dateAfter ? `after:${dateAfter}` : "";
 
+  const others = document.getElementById("others").value;
+  const othersVal = others ? `${others}` : "";
+
   const queryParts = [
     exactTextVal,
     negativeWordVal,
@@ -40,6 +43,7 @@ document.getElementById("form").addEventListener("submit", (e) => {
     fileTypeVal,
     dateBeforeVal,
     dateAfterVal,
+    othersVal,
   ].filter((part) => part);
 
   result.innerHTML = queryParts.join(" ");
